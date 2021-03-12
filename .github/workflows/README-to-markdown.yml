@@ -19,7 +19,7 @@ jobs:
         --user
 
     - name: convert to markdown
-      run: jupyter nbconvert README.ipynb --to markdown
+      run: python jupyter nbconvert README.ipynb --to markdown
 
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
